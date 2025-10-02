@@ -1,0 +1,48 @@
+#projetos {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+#projetos .imgProjeto {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+#projetos h2 {
+  color: #006837;
+  margin-bottom: 20px;
+}
+
+
+.carrossel-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px;
+}
+
+.item {
+  min-width: 300px;
+  background: #e0f2e9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.seta {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #006837;
+  padding: 10px;
+}

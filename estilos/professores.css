@@ -1,0 +1,17 @@
+#professores {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#professores h2 {
+  color: #006837;
+  margin-bottom: 20px;
+}
+
+#professores div {
+  background-color: #e0f2e9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #006837;
+}
