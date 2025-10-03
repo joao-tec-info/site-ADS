@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,209 +14,185 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
 </head>
 <body>
-    <script src="scripts/menu.js"></script>
-   <!-- Botão Hamburguer -->
-<div id="menu-toggle" onclick="abrirMenu()">☰</div>
+  <script src="scripts/menu.js"></script>
 
-<!-- Menu Lateral -->
-<aside id="menu-lateral">
-  <div id="menu-fechar" onclick="fecharMenu()">✖</div>
-  <h3>Links Úteis</h3>
-  <ul>
-    <li><a href="https://www.instagram.com/ifceumirim" target="_blank">Instagram do IFCE Umirim</a></li>
-    <li><a href="https://empresa.ifceumirim.br" target="_blank">Empresa Júnior</a></li>
-    <li><a href="https://etil.ifceumirim.br" target="_blank">ETIL</a></li>
-    <li><a href="https://labs.ifceumirim.br/reservas" target="_blank">Reserva de Laboratórios</a></li>
-    <li><a href="https://centroacademico.ifceumirim.br" target="_blank">Centro Acadêmico</a></li>
-    <li><a href="https://portal.ifce.edu.br/campus/umirim" target="_blank">Site do IFCE Umirim</a></li>
-  </ul>
-</aside>
+  <!-- Botão Hamburguer -->
+  <div id="menu-toggle" onclick="abrirMenu()">☰</div>
 
-  <!-- Início -->
-  <header id="inicio">
-    <h1>Curso de Análise e Desenvolvimento de Sistemas</h1>
-    <p>IFCE - Campus Umirim</p>
-  </header>
-
-  <!-- Menu de navegação -->
-  <nav>
+  <!-- Menu Lateral -->
+  <aside id="menu-lateral">
+    <div id="menu-fechar" onclick="fecharMenu()">✖</div>
+    <h3>Links Úteis</h3>
     <ul>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#professores">Professores</a></li>
-      <li><a href="#disciplinas">Disciplinas</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
+      <li><a href="https://www.instagram.com/ifceumirim" target="_blank">Instagram do IFCE Umirim</a></li>
+      <li><a href="https://empresa.ifceumirim.br" target="_blank">Empresa Júnior</a></li>
+      <li><a href="https://etil.ifceumirim.br" target="_blank">ETIL</a></li>
+      <li><a href="https://labs.ifceumirim.br/reservas" target="_blank">Reserva de Laboratórios</a></li>
+      <li><a href="https://centroacademico.ifceumirim.br" target="_blank">Centro Acadêmico</a></li>
+      <li><a href="https://portal.ifce.edu.br/campus/umirim" target="_blank">Site do IFCE Umirim</a></li>
     </ul>
-  </nav>
+  </aside>
 
-  <!-- Sobre o Curso -->
-  <section id="sobre">
-    <h2>Sobre o Curso</h2>
-    <p>O curso de ADS do IFCE Umirim forma profissionais capacitados para atuar no desenvolvimento de sistemas, análise de dados e soluções tecnológicas. Com foco prático e teórico, o curso prepara o aluno para os desafios do mercado de trabalho.</p>
-  </section>
+  <main>
+    <!-- Início -->
+    <header id="inicio">
+      <h1>Curso de Análise e Desenvolvimento de Sistemas</h1>
+      <p>IFCE - Campus Umirim</p>
+    </header>
 
-  <!-- Professores -->
-  <section id="professores">
-    <h2>Professores</h2>
-    <div>
-      <h3>Maria Silva</h3>
-      <p>Mestre em Computação</p>
-    </div>
-    <div>
-      <h3>João Souza</h3>
-      <p>Doutor em Engenharia de Software</p>
-    </div>
-    <!-- Adicione mais professores conforme necessário -->
-  </section>
+    <!-- Menu de navegação -->
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#professores">Professores</a></li>
+        <li><a href="#disciplinas">Disciplinas</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
 
-  <!-- Disciplinas -->
-  
- <section id="disciplinas">
+    <!-- Sobre o Curso -->
+    <section id="sobre" aria-label="Sobre o Curso">
+      <h2>Sobre o Curso</h2>
+      <p>O curso de ADS do IFCE Umirim forma profissionais capacitados para atuar no desenvolvimento de sistemas, análise de dados e soluções tecnológicas. Com foco prático e teórico, o curso prepara o aluno para os desafios do mercado de trabalho.</p>
+    </section>
+
+    <!-- Professores -->
+    <section id="professores" aria-label="Professores do Curso">
+      <h2>Professores</h2>
+      <div>
+        <h3>Maria Silva</h3>
+        <p>Mestre em Computação</p>
+      </div>
+      <div>
+        <h3>João Souza</h3>
+        <p>Doutor em Engenharia de Software</p>
+      </div>
+    </section>
+
+    <!-- Disciplinas -->
+    <section id="disciplinas" aria-label="Disciplinas por Semestre">
   <h2>Disciplinas por Semestre</h2>
 
   <div class="carrossel-container">
-    <button class="seta" onclick="moverCarrossel(-1)">&#10094;</button>
+    <button class="seta" onclick="moverCarrosselDisciplinas(-1)">&#10094;</button>
 
     <div class="carrossel" id="carrossel-disciplinas">
       <!-- Semestre 1 -->
       <div class="item">
         <h3>1º Semestre</h3>
-        <table>
-          <thead>
-            <tr><th>Disciplina</th><th>CH</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Introdução à Computação</td><td>40h</td></tr>
-            <tr><td>Comunicação e Expressão</td><td>40h</td></tr>
-            <tr><td>Introdução à Programação</td><td>80h</td></tr>
-            <tr><td>Fundamentos de Matemática</td><td>80h</td></tr>
-            <tr><td>Inglês Técnico I</td><td>40h</td></tr>
-            <tr><td>Seminários de Questões Contemporâneas</td><td>40h</td></tr>
-            <tr><td>Ética e Responsabilidade</td><td>40h</td></tr>
-          </tbody>
-        </table>
+        <ul>
+          <li>Introdução à Computação (40h)</li>
+          <li>Comunicação e Expressão (40h)</li>
+          <li>Introdução à Programação (80h)</li>
+          <li>Fundamentos de Matemática (80h)</li>
+          <li>Inglês Técnico I (40h)</li>
+          <li>Seminários de Questões Contemporâneas (40h)</li>
+          <li>Ética e Responsabilidade (40h)</li>
+        </ul>
       </div>
 
       <!-- Semestre 2 -->
       <div class="item">
         <h3>2º Semestre</h3>
-        <table>
-          <thead>
-            <tr><th>Disciplina</th><th>CH</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Programação Orientada a Objetos</td><td>80h</td></tr>
-            <tr><td>Matemática Discreta</td><td>80h</td></tr>
-            <tr><td>Arquitetura de Computadores</td><td>80h</td></tr>
-            <tr><td>Inglês Técnico II</td><td>40h</td></tr>
-            <tr><td>Banco de Dados I</td><td>80h</td></tr>
-            <tr><td>Design de Interfaces</td><td>40h</td></tr>
-          </tbody>
-        </table>
+        <ul>
+          <li>Fundamentos de Redes de Computadores (80h)</li>
+          <li>Administração de Sistemas Operacionais (80h)</li>
+          <li>Programação Estruturada (80h)</li>
+          <li>Ambiente de Desenvolvimento de Software (40h)</li>
+          <li>Inglês Técnico II (40h)</li>
+          <li>Arquitetura de Computadores (40h)</li>
+          <li>Empreendedorismo (40h)</li>
+        </ul>
       </div>
 
       <!-- Semestre 3 -->
       <div class="item">
         <h3>3º Semestre</h3>
-        <table>
-          <thead>
-            <tr><th>Disciplina</th><th>CH</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Estrutura de Dados</td><td>80h</td></tr>
-            <tr><td>Engenharia de Software I</td><td>80h</td></tr>
-            <tr><td>Banco de Dados II</td><td>80h</td></tr>
-            <tr><td>Redes de Computadores</td><td>80h</td></tr>
-            <tr><td>Desenvolvimento Web I</td><td>80h</td></tr>
-          </tbody>
-        </table>
+        <ul>
+          <li>Banco de Dados (80h)</li>
+          <li>Gestão de Projetos (80h)</li>
+          <li>Programação Orientada a Objetos (80h)</li>
+          <li>Engenharia de Software (80h)</li>
+          <li>Análise e Projeto de Sistemas (80h)</li>
+          <li>Projeto Social (40h)</li>
+        </ul>
       </div>
 
       <!-- Semestre 4 -->
       <div class="item">
         <h3>4º Semestre</h3>
-        <table>
-          <thead>
-            <tr><th>Disciplina</th><th>CH</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Desenvolvimento Web II</td><td>80h</td></tr>
-            <tr><td>Engenharia de Software II</td><td>80h</td></tr>
-            <tr><td>Segurança da Informação</td><td>80h</td></tr>
-            <tr><td>Programação para Dispositivos Móveis</td><td>80h</td></tr>
-            <tr><td>Gestão de Projetos</td><td>40h</td></tr>
-          </tbody>
-        </table>
+        <ul>
+          <li>Optativa I (40h)</li>
+          <li>Projeto Integrador Multidisciplinar I (120h)</li>
+          <li>Programação Web I (80h)</li>
+          <li>Estrutura de Dados (80h)</li>
+          <li>Arquitetura de Sistemas (40h)</li>
+          <li>Introdução à Ciência de Dados (80h)</li>
+        </ul>
       </div>
 
       <!-- Semestre 5 -->
       <div class="item">
         <h3>5º Semestre</h3>
-        <table>
-          <thead>
-            <tr><th>Disciplina</th><th>CH</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Empreendedorismo</td><td>40h</td></tr>
-            <tr><td>Qualidade de Software</td><td>80h</td></tr>
-            <tr><td>Inteligência Artificial</td><td>80h</td></tr>
-            <tr><td>Estágio Supervisionado</td><td>160h</td></tr>
-            <tr><td>Trabalho de Conclusão de Curso</td><td>80h</td></tr>
-          </tbody>
-        </table>
+        <ul>
+          <li>Optativa II (80h)</li>
+          <li>Segurança de Sistemas (80h)</li>
+          <li>Projeto Integrador Multidisciplinar II (120h)</li>
+          <li>Programação Web II (40h)</li>
+          <li>Tópicos Especiais em Programação I (40h)</li>
+          <li>Testes e Qualidade de Software (40h)</li>
+          <li>Programação para Dispositivos Móveis (80h)</li>
+        </ul>
       </div>
     </div>
 
-    <button class="seta" onclick="moverCarrossel(1)">&#10095;</button>
+    <button class="seta" onclick="moverCarrosselDisciplinas(1)">&#10095;</button>
   </div>
 </section>
 
-<script src="scripts/carrossel.js"></script>
-
-  <!-- Projetos -->
-  <script src="scripts/carrossel.js"></script>
- <section id="projetos">
+    <!-- Projetos -->
+    <section id="projetos" aria-label="Projetos e Eventos">
   <h2>Projetos e Eventos</h2>
-
-  <div class="carrossel-container">
-    <button class="seta" onclick="moverCarrossel(-1)">&#10094;</button>
-
-    <div class="carrossel" id="carrossel">
-      <div class="item">
+  <div class="slide-container">
+    <button class="seta" onclick="voltarSlide()">&#10094;</button>
+    <div class="slide" id="carrossel-projetos">
+      <div class="item ativo">
         <h3>Projeto 1</h3>
-        <img class="imgProjeto" src="imgs/genericwebprojec.png" alt="nao foi posivel carregar a imagem"> 
+        <img class="imgProjeto" src="imgs/genericwebprojec.png" alt="Sistema de controle de estoque com interface web">
         <p>Sistema de controle de estoque com interface web.</p>
       </div>
       <div class="item">
         <h3>Projeto 2</h3>
-        <img class="imgProjeto" src="imgs/genericwebprojec.png" alt="nao foi posivel carregar a imagem"> 
+        <img class="imgProjeto" src="imgs/genericwebprojec.png" alt="Aplicativo mobile para agendamento de consultas">
         <p>Aplicativo mobile para agendamento de consultas.</p>
       </div>
       <div class="item">
         <h3>Projeto 3</h3>
-        <img class="imgProjeto" src="imgs/genericwebprojec.png" alt="nao foi posivel carregar a imagem"> 
+        <img class="imgProjeto" src="imgs/genericwebprojec.png" alt="Site institucional para uma ONG local">
         <p>Site institucional para uma ONG local.</p>
       </div>
-      <!-- Adicione mais projetos aqui -->
     </div>
-
-    <button class="seta" onclick="moverCarrossel(1)">&#10095;</button>
+    <button class="seta" onclick="avancarSlide()">&#10095;</button>
   </div>
 </section>
 
-
-  <!-- Contato -->
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Email: ads@ifce.edu.br</p>
-    <p>Telefone: (88) 99999-9999</p>
-    <p>Endereço: IFCE - Campus Umirim, CE</p>
-  </section>
+    <!-- Contato -->
+    <section id="contato" aria-label="Informações de Contato">
+      <h2>Contato</h2>
+      <p>Email: ads@ifce.edu.br</p>
+      <p>Telefone: (88) 99999-9999</p>
+      <p>Endereço: IFCE - Campus Umirim, CE</p>
+    </section>
+  </main>
 
   <!-- Rodapé -->
   <footer>
     <p>&copy; 2025 Curso ADS - IFCE Umirim</p>
   </footer>
 
+  <!-- Scripts dos carrosséis -->
+  <script src="scripts/carrossel-disciplinas.js"></script>
+  <script src="scripts/carrossel-projetos.js"></script>
 </body>
 </html>

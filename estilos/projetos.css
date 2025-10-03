@@ -3,41 +3,56 @@
   max-width: 1000px;
   margin: auto;
 }
-#projetos .imgProjeto {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  border-radius: 8px;
-}
+
 #projetos h2 {
   color: #006837;
   margin-bottom: 20px;
 }
 
-
-.carrossel-container {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.carrossel {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 20px;
-  padding: 10px;
-}
-
-.item {
-  min-width: 300px;
-  background: #e0f2e9;
-  padding: 20px;
-  border-radius: 8px;
+.imgProjeto {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 10px auto;
+  border-radius: 6px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
+/* Container do carrossel tipo slide */
+.slide-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Área dos slides */
+#carrossel-projetos {
+  position: relative;
+  width: 100%;
+}
+
+/* Cada item do carrossel */
+#carrossel-projetos .item {
+  display: none;
+  padding: 20px;
+  background-color: #e0f2e9;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Slide visível */
+#carrossel-projetos .item.ativo {
+  display: block;
+}
+
+/* Botões de navegação */
 .seta {
   background: none;
   border: none;
@@ -45,4 +60,10 @@
   cursor: pointer;
   color: #006837;
   padding: 10px;
+  z-index: 10;
+  transition: color 0.3s ease;
+}
+
+.seta:hover {
+  color: #004d2c;
 }
