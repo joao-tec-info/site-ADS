@@ -4,6 +4,11 @@ function abrirMenu() {
 }
 
 function fecharMenu() {
-  document.getElementById("menu-lateral").style.left = "-250px";
+  const menuLateral = document.getElementById("menu-lateral");
+  if (window.innerWidth <= 768) {
+    menuLateral.style.left = "-100%";
+  } else {
+    menuLateral.style.left = "-250px";
+  }
   document.getElementById('menu-toggle').style.display = 'block';
 }

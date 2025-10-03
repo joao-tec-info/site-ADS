@@ -6,17 +6,28 @@
 
 #projetos h2 {
   color: #006837;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .imgProjeto {
-  width: 300px;
+  width: 320px;
   height: auto;
   object-fit: contain;
   display: block;
-  margin: 10px auto;
-  border-radius: 6px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imgProjeto:hover,
+.imgProjeto:focus {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  outline: none;
 }
 
 /* Container do carrossel tipo slide */
@@ -40,11 +51,19 @@
 /* Cada item do carrossel */
 #carrossel-projetos .item {
   display: none;
-  padding: 20px;
+  padding: 25px;
   background-color: #e0f2e9;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#carrossel-projetos .item:hover,
+#carrossel-projetos .item:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+  outline: none;
 }
 
 /* Slide visível */
@@ -56,14 +75,16 @@
 .seta {
   background: none;
   border: none;
-  font-size: 2rem;
+  font-size: 2.2rem;
   cursor: pointer;
   color: #006837;
-  padding: 10px;
+  padding: 12px;
   z-index: 10;
   transition: color 0.3s ease;
 }
 
-.seta:hover {
+.seta:hover,
+.seta:focus {
   color: #004d2c;
+  outline: none;
 }

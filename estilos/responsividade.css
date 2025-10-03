@@ -1,0 +1,160 @@
+/* Responsividade para telas menores */
+
+/* Breakpoint para tablets e mobiles: max-width 768px */
+@media (max-width: 768px) {
+  /* Ajustes gerais */
+  body {
+    font-size: 14px;
+  }
+
+  /* Header */
+  header {
+    padding: 20px 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  /* Nav */
+  nav {
+    display: none;
+  }
+
+  /* Seções */
+  #sobre, #professores, #disciplinas, #projetos, #contato {
+    padding: 40px 10px;
+  }
+
+  /* Disciplinas */
+  .item {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .carrossel {
+    flex-direction: column;
+    overflow-x: visible;
+    overflow-y: auto;
+  }
+
+  /* Projetos */
+  .imgProjeto {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .slide-container {
+    max-width: 100%;
+  }
+
+  /* Menu lateral */
+  #menu-lateral {
+    width: 100%;
+    left: -100%;
+  }
+
+  #menu-toggle {
+    top: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    padding: 8px;
+  }
+}
+
+/* Ajustes para melhorar a responsividade e aparência */
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  #sobre, #professores, #disciplinas, #projetos, #contato {
+    padding: 25px 10px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .seta {
+    font-size: 1.6rem;
+    padding: 6px;
+  }
+
+  .imgProjeto {
+    max-width: 100%;
+    width: auto;
+  }
+
+  .carrossel {
+    gap: 12px;
+  }
+}
+
+/* Breakpoint para desktops pequenos: max-width 1024px */
+@media (max-width: 1024px) {
+  /* Ajustes para tablets */
+  .item {
+    min-width: 250px;
+  }
+
+  .imgProjeto {
+    width: 250px;
+  }
+
+  .slide-container {
+    max-width: 600px;
+  }
+}
+
+/* Breakpoint para celulares pequenos: max-width 480px */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  #sobre, #professores, #disciplinas, #projetos, #contato {
+    padding: 20px 5px;
+  }
+
+  .seta {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+
+  .imgProjeto {
+    max-width: 100%;
+    width: auto;
+  }
+
+  .carrossel {
+    gap: 10px;
+  }
+}
+
+/* Esconder hamburger em telas grandes */
+@media (min-width: 769px) {
+  #menu-toggle {
+    display: none;
+  }
+}
